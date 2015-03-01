@@ -36,7 +36,17 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'created_at',
             // 'updated_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+             
+                'urlCreator' => function ($action, $model, $key, $index) {
+                    if ($action === 'info') {
+                        $url = Yii::$app->controller->createUrl('xx'); // your own url generation logic
+                        return $url;
+                    }
+                }
+          
+            ],
         ],
     ]); ?>
 
