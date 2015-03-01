@@ -31,3 +31,4 @@ phpunit.phar
 
 sess_*
 db.php
+_protected/runtime/*
