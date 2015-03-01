@@ -1,0 +1,265 @@
+2015-03-01 12:31:14 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'sinabeauty_backe'@'localhost' to database 'sinabeauty_backe'' in /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'sinabeauty_back...', 'DsZEdyHyFvWhwmC...', NULL)
+#1 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(815): yii\db\Command->prepare(true)
+#6 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/yii(25): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1044] Access denied for user 'sinabeauty_backe'@'localhost' to database 'sinabeauty_backe'' in /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(815): yii\db\Command->prepare(true)
+#4 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/yii(25): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-03-01 12:31:14 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PTOOLSPATH' => '/Users/pangpond/phalcon-tools'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/7x/l1fgdb9141x0cx7pl63_b_ww0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.5sQbVa7l1r/Render'
+    'OLDPWD' => '/Users/pangpond/Sites/Sinabeauty/Production'
+    'USER' => 'pangpond'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QQkiBl561k/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PATH' => '/Users/pangpond/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pangpond/phalcon-tools'
+    'PWD' => '/Users/pangpond/Sites/Sinabeauty/Production/basic/_protected'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/Users/pangpond'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'pangpond'
+    'LC_CTYPE' => 'UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1425187874.2602
+    'REQUEST_TIME' => 1425187874
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-01 12:31:31 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'sinabeauty_backe'@'localhost' to database 'sinabeauty_backe'' in /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'sinabeauty_back...', 'DsZEdyHyFvWhwmC...', NULL)
+#1 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(815): yii\db\Command->prepare(true)
+#6 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/yii(25): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1044] Access denied for user 'sinabeauty_backe'@'localhost' to database 'sinabeauty_backe'' in /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(815): yii\db\Command->prepare(true)
+#4 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/yii(25): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-03-01 12:31:31 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PTOOLSPATH' => '/Users/pangpond/phalcon-tools'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/7x/l1fgdb9141x0cx7pl63_b_ww0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.5sQbVa7l1r/Render'
+    'OLDPWD' => '/Users/pangpond/Sites/Sinabeauty/Production'
+    'USER' => 'pangpond'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QQkiBl561k/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PATH' => '/Users/pangpond/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pangpond/phalcon-tools'
+    'PWD' => '/Users/pangpond/Sites/Sinabeauty/Production/basic/_protected'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/Users/pangpond'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'pangpond'
+    'LC_CTYPE' => 'UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1425187891.7452
+    'REQUEST_TIME' => 1425187891
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-01 20:07:57 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists' in /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Migration.php(248): yii\db\Command->execute()
+#2 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/console/migrations/m141022_115823_create_user_table.php(27): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(489): m141022_115823_create_user_table->up()
+#4 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(126): yii\console\controllers\BaseMigrateController->migrateUp('m141022_115823_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#9 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#10 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#11 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#12 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/yii(25): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL,
+	`email` varchar(255) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`status` smallint(6) NOT NULL,
+	`auth_key` varchar(32) NOT NULL,
+	`password_reset_token` varchar(255),
+	`account_activation_token` varchar(255),
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB' in /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/db/Migration.php(248): yii\db\Command->execute()
+#2 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/console/migrations/m141022_115823_create_user_table.php(27): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(489): m141022_115823_create_user_table->up()
+#4 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(126): yii\console\controllers\BaseMigrateController->migrateUp('m141022_115823_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#9 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#10 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#11 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#12 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /Users/pangpond/Sites/Sinabeauty/Production/basic/_protected/yii(25): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2015-03-01 20:07:54 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PTOOLSPATH' => '/Users/pangpond/phalcon-tools'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/7x/l1fgdb9141x0cx7pl63_b_ww0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.usAGh4WFR0/Render'
+    'OLDPWD' => '/Users/pangpond/Sites/Sinabeauty/Production/basic'
+    'USER' => 'pangpond'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.Nm7JFf0aqp/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PATH' => '/Users/pangpond/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pangpond/phalcon-tools'
+    'PWD' => '/Users/pangpond/Sites/Sinabeauty/Production/basic/_protected'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/Users/pangpond'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'pangpond'
+    'LC_CTYPE' => 'UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1425215274.9654
+    'REQUEST_TIME' => 1425215274
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
