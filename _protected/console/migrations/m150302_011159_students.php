@@ -76,8 +76,8 @@ class m150302_011159_students extends Migration
             'citizenid' => Schema::TYPE_STRING . '(32) NOT NULL',
             'class_id' => Schema::TYPE_SMALLINT . ' NOT NULL',
             'room_id' => Schema::TYPE_SMALLINT . ' NOT NULL',
-            'created_at' => Schema::TYPE_INTEGER,
-            'updated_at' => Schema::TYPE_INTEGER,
+            'created_at' => Schema::TYPE_DATETIME,
+            'updated_at' => Schema::TYPE_DATETIME,
             'PRIMARY KEY (id)'
         ], $tableOptions);
         $this->createIndex('idx-student-citizen', '{{%students}}', 'citizenid');
@@ -89,8 +89,8 @@ class m150302_011159_students extends Migration
             'lastname' => Schema::TYPE_STRING . ' NOT NULL',
             'mobile' => Schema::TYPE_STRING . ' NOT NULL',
             'email' => Schema::TYPE_SMALLINT . ' NOT NULL',
-            'created_at' => Schema::TYPE_INTEGER,
-            'updated_at' => Schema::TYPE_INTEGER ,
+            'created_at' => Schema::TYPE_DATETIME,
+            'updated_at' => Schema::TYPE_DATETIME ,
         ], $tableOptions);
 
 
